@@ -1,0 +1,30 @@
+{
+  "name": "pjg_nodejs_crud_mongodb_service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "build": "rm -rf build && rsync -av --exclude 'node_modules' ./ ./build && cd build && zip -r build.zip ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panchal-jay-git/pjg_nodejs_crud_mongodb_service.git"
+  },
+  "author": "Jay Panchal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/panchal-jay-git/pjg_nodejs_crud_mongodb_service/issues"
+  },
+  "homepage": "https://github.com/panchal-jay-git/pjg_nodejs_crud_mongodb_service#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "bunyan": "^1.8.15",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2",
+    "winston": "^3.14.1"
+  }
+}
