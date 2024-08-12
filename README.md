@@ -50,10 +50,9 @@ This project demonstrates how to create a REST API with Node.js, Express, and Mo
     ```javascript
     const connectDB = async () => {
         try {
-            await mongoose.connect('mongodb://localhost:27017/user', {
+            await mongoose.connect('mongodb://localhost:27017/dbname', {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,
-                useCreateIndex: true,
             });
             console.log('MongoDB connected successfully.');
         } catch (err) {

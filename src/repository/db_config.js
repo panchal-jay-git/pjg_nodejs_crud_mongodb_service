@@ -3,7 +3,7 @@ const logger = require('../common/logger');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/user', {
+        await mongoose.connect('mongodb://localhost:27017/dbname', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
